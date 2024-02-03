@@ -1,0 +1,6 @@
+- name: Renderuj szablon test.html.j2 do pliku test.html
+  ansible.builtin.template:
+    src: test.html.j2
+    dest: "{{ role_path }}/files/test.html"
+  delegate_to: localhost
+  run_once: true

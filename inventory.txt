@@ -1,14 +1,15 @@
 [drone_master]
 mikrus_D
- 
+
 [drone_workers]
 mikrus_G
  
 [drone_master:vars]
-ansible_ssh_user=fox
-ansible_ssh_private_key_file=/home/fox/.ssh/linode.id_ed25519.pem
-ansible_port = 22
-ansible_host = srv12.mikr.us
+ansible_host=srv16.mikr.us
+ansible_port=10
+ansible_user=root
+ansible_connection=ssh
+ansible_ssh_private_key_file=/Users/damian/.ssh/id_rsa
 
 [drone_workers:vars]
 ansible_ssh_user=fox
